@@ -1,4 +1,4 @@
-import posts from '@/app/data/posts.json';
+import posts from '@/app/constants/posts.json';
 
 const BlogPostPage = ({ params }: { params: { id: string } }) => {
   const postId = params.id;
@@ -11,7 +11,7 @@ const BlogPostPage = ({ params }: { params: { id: string } }) => {
 
   return (
     <div className="max-w-3xl mx-auto my-24 p-6">
-      <h1 className="text-4xl font-bold text-center text-gray-800">{post.title}</h1>
+      <h2 className="text-4xl font-bold text-center text-gray-800">{post.title}</h2>
       <p className="text-center text-lg text-gray-600 mt-2">{post.date}</p>
 
       <div className="relative mt-6 mb-8">
