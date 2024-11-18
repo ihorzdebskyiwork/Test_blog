@@ -1,4 +1,5 @@
 import Link from 'next/link';
+import Image from 'next/image';
 
 interface PostCardProps {
   title: string;
@@ -10,7 +11,7 @@ interface PostCardProps {
 const PostCard = ({ title, date, image, slug }: PostCardProps) => {
   return (
     <div className="border rounded-md overflow-hidden shadow-lg">
-      <img src={image} alt={title} className="w-full h-48 object-cover" />
+      <Image height={500} width={500} src={image} alt={title} className="w-full h-48 object-cover" />
       <div className="p-4">
         <h3 className="text-xl font-semibold">{title}</h3>
         <p className="text-sm text-gray-500">{date}</p>

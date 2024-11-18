@@ -1,0 +1,22 @@
+{
+    "quickLinks": [
+      { "label": "Home", "href": "/" },
+      { "label": "About", "href": "/about" },
+      { "label": "Contact", "href": "/contact" },
+      { "label": "Privacy Policy", "href": "#" }
+    ],
+    "followUs": [
+      { "platform": "Facebook", "href": "https://facebook.com", "icon": "fab fa-facebook-f" },
+      { "platform": "Twitter", "href": "https://twitter.com", "icon": "fab fa-twitter" },
+      { "platform": "Instagram", "href": "https://instagram.com", "icon": "fab fa-instagram" }
+    ],
+    "contact": [
+      { "label": "Email", "value": "contact@travelblog.com" },
+      { "label": "Phone", "value": "(123) 456-7890" },
+      { "label": "Address", "value": "123 Adventure Lane, Wonderland" }
+    ],
+    "newsletter": {
+      "description": "Subscribe to our newsletter to receive the latest travel updates."
+    }
+  }
+  

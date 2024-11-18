@@ -1,5 +1,5 @@
 import team from "@/app/constants/team.json";
-import Navbar from "@/app/components/Navbar";
+import Image from 'next/image';
 
 export default function About() {
   return (
@@ -29,7 +29,9 @@ export default function About() {
                 key={member.id}
                 className="text-center border rounded-lg p-6 shadow-md transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
               >
-                <img
+                <Image 
+                  height={500} 
+                  width={500}
                   src={member.image}
                   alt={member.name}
                   className="w-32 h-32 object-cover rounded-full mx-auto"

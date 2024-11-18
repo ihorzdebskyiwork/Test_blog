@@ -1,14 +1,15 @@
 import destinations from '../app/constants/destinations.json';
 import posts from '../app/constants/posts.json';
 import PostCard from "./components/PostCard";
+import Image from 'next/image'; 
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
   <h2 className="text-3xl font-semibold text-center">{children}</h2>
 );
 
 const DestinationCard = ({ destination }: { destination: any }) => (
-  <div key={destination.id} className="group border rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
-    <img src={destination.image} alt={destination.name} className="w-full h-56 object-cover" />
+  <div key={destination.id} className="group border rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 ease-in-out cursor-pointer hover:scale-105 hover:shadow-xl">
+    <Image src={destination.image} width={500} height={500} alt={destination.name} className="w-full h-56 object-cover" />
     <div className="p-4">
       <h3 className="text-xl font-semibold">{destination.name}</h3>
       <p className="mt-2 text-gray-600">{destination.description}</p>

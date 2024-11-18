@@ -1,4 +1,6 @@
 import posts from '@/app/constants/posts.json';
+import Link from 'next/link';
+import Image from 'next/image';
 
 const BlogPostPage = ({ params }: { params: { id: string } }) => {
   const postId = params.id;
@@ -15,7 +17,9 @@ const BlogPostPage = ({ params }: { params: { id: string } }) => {
       <p className="text-center text-lg text-gray-600 mt-2">{post.date}</p>
 
       <div className="relative mt-6 mb-8">
-        <img
+        <Image 
+          height={500} 
+          width={500}
           src={post.image}
           alt={post.title}
           className="w-full h-80 object-cover rounded-lg shadow-lg"
@@ -27,12 +31,12 @@ const BlogPostPage = ({ params }: { params: { id: string } }) => {
       </div>
 
       <div className="text-center mt-8">
-        <a
+        <Link
           href="/"
           className="inline-block bg-blue-600 text-white px-6 py-2 rounded-md shadow-md hover:bg-blue-700 transition duration-300"
         >
           Go Back
-        </a>
+        </Link>
       </div>
     </div>
   );

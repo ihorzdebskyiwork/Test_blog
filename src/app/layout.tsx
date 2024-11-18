@@ -1,4 +1,3 @@
-// app/layout.tsx
 import Footer from './components/Footer';
 import './globals.css';
 import Navbar from '@/app/components/Navbar';
