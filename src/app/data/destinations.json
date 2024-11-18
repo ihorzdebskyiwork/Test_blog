@@ -1,0 +1,21 @@
+[
+    {
+      "id": 1,
+      "name": "Paris",
+      "description": "Explore the romantic city of Paris with its rich history, iconic landmarks, and delicious food.",
+      "image": "/images/paris.png"
+    },
+    {
+      "id": 2,
+      "name": "New York",
+      "description": "The city that never sleeps — vibrant, diverse, and filled with energy.",
+      "image": "/images/new-york.png"
+    },
+    {
+      "id": 3,
+      "name": "Tokyo",
+      "description": "Dive into the unique blend of modern and traditional culture in Tokyo, Japan.",
+      "image": "/images/tokyo.png"
+    }
+  ]
+  

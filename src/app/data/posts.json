@@ -1,0 +1,19 @@
+[
+    {
+      "id": 1,
+      "title": "My Trip to Paris",
+      "date": "2024-05-15",
+      "content": "I had the most amazing time in Paris! The Eiffel Tower was breathtaking, and the food was out of this world.",
+      "image": "/images/paris-trip.png",
+      "destinationId": 1
+    },
+    {
+      "id": 2,
+      "title": "Exploring New York",
+      "date": "2024-07-01",
+      "content": "New York was an adventure from start to finish. From Central Park to Times Square, every corner of the city had something special.",
+      "image": "/images/new-york-trip.png",
+      "destinationId": 2
+    }
+  ]
+  
