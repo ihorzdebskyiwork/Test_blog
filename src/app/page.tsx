@@ -1,26 +1,10 @@
-import destinations from '../app/constants/destinations.json';
-import posts from '../app/constants/posts.json';
-import PostCard from "./components/PostCard";
-import Image from 'next/image'; 
+import destinations from '../constants/destinations.json';
+import posts from '../constants/posts.json';
+import DestinationCard from '../components/DestinationCard';
+import BlogPostCard from '../components/BlogPostCard';
 
 const SectionTitle = ({ children }: { children: React.ReactNode }) => (
   <h2 className="text-3xl font-semibold text-center">{children}</h2>
-);
-
-const DestinationCard = ({ destination }: { destination: any }) => (
-  <div key={destination.id} className="group border rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 ease-in-out cursor-pointer hover:scale-105 hover:shadow-xl">
-    <Image src={destination.image} width={500} height={500} alt={destination.name} className="w-full h-56 object-cover" />
-    <div className="p-4">
-      <h3 className="text-xl font-semibold">{destination.name}</h3>
-      <p className="mt-2 text-gray-600">{destination.description}</p>
-    </div>
-  </div>
-);
-
-const BlogPostCard = ({ post }: { post: any }) => (
-  <div key={post.id} className="group border rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl">
-    <PostCard title={post.title} date={post.date} image={post.image} slug={post.id.toString()} />
-  </div>
 );
 
 const HomePage = () => {
@@ -33,11 +17,9 @@ const HomePage = () => {
             Your browser does not support the video tag.
           </video>
           <div className="absolute inset-0 bg-black opacity-50"></div>
-          <div className="relative z-10 flex items-center justify-center h-full text-center text-white">
-            <div>
+          <div className="relative z-10 flex flex-col justify-center h-full text-center text-white">
               <h1 className="text-4xl font-bold">Explore the World with Us</h1>
               <p className="mt-4 text-lg">Your next adventure is just a click away.</p>
-            </div>
           </div>
         </section>
 

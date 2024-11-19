@@ -1,4 +1,4 @@
-import team from "@/app/constants/team.json";
+import team from "@/constants/team.json";
 import Image from 'next/image';
 
 export default function About() {

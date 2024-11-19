@@ -24,14 +24,14 @@ const Footer = () => {
               {footerData.quickLinks.map((link, index) => (
                 <li key={index}>
                   {link.href.startsWith("http") ? (
-                    <a
+                    <Link
                       href={link.href}
                       target="_blank"
                       rel="noopener noreferrer"
                       className="text-gray-400 hover:text-white"
                     >
                       {link.label}
-                    </a>
+                    </Link>
                   ) : (
                     <Link href={link.href} className="text-gray-400 hover:text-white">
                       {link.label}
@@ -44,7 +44,7 @@ const Footer = () => {
           <FooterSection title="Follow Us">
             <div className="flex flex-col space-y-2">
               {footerData.followUs.map((social, index) => (
-                <a
+                <Link
                   key={index}
                   href={social.href}
                   target="_blank"
@@ -52,7 +52,7 @@ const Footer = () => {
                   className="text-gray-400 hover:text-white"
                 >
                   <i className={social.icon}></i> {social.platform}
-                </a>
+                </Link>
               ))}
             </div>
           </FooterSection>

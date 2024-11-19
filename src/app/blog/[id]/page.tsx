@@ -1,11 +1,13 @@
-import posts from '@/app/constants/posts.json';
+import posts from '@/constants/posts.json';
 import Link from 'next/link';
 import Image from 'next/image';
+import { BlogPost } from '@/types/blogPost'; 
+import { BlogPostPageProps } from '@/types/blogPostPageProps'; 
 
-const BlogPostPage = ({ params }: { params: { id: string } }) => {
+const BlogPostPage = ({ params }: BlogPostPageProps) => {
   const postId = params.id;
 
-  const post = posts.find((p) => p.id.toString() === postId);
+  const post: BlogPost | undefined = posts.find((p) => p.id.toString() === postId);
 
   if (!post) {
     return <p className="text-center text-xl">Post not found.</p>;
