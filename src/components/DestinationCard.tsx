@@ -4,7 +4,7 @@ import Image from 'next/image';
 const DestinationCard = ({ destination }: { destination: Destination }) => (
   <div
     key={destination.id}
-    className="group border rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 ease-in-out cursor-pointer hover:scale-105 hover:shadow-xl"
+    className="group border rounded-lg overflow-hidden shadow-md transform transition-transform duration-300 ease-in-out hover:scale-105 hover:shadow-xl"
   >
     <Image
       src={destination.image}
